@@ -1,0 +1,127 @@
+@-moz-document domain("wikipedia.org"),
+               domain("wikidata.org"),
+               domain("mediawiki.org"), 
+               domain("wiktionary.org")
+{
+    :root {
+        --color: #CCC;
+        --background: #222;
+        --background-light: #333;
+        --border: #555;
+        --purple: #9977BB;
+    }
+    a:link, a:visited
+    {
+        color: var(--color) !important;
+    }
+    a, a:active, a:hover, .toctogglelabel
+    {
+        color: var(--purple) !important;
+    }
+    body,
+    h1, h2, h3, h4, h5, h6,
+    input[type="date"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="search"],
+    input[type="text"],
+    select,
+    table,
+    table td,
+    table th,
+    .catlinks,
+    .infobox,
+    .mw-body,
+    .mw-warning,
+    .navbox,
+    .navbox-subgroup,
+    .searchButton,
+    .thumbinner,
+    .toc,
+    .toccolours,
+    #mp-lower,
+    #mp-middle,
+    #mp-topbanner,
+    #pagehistory li.selected
+    {
+        color: var(--color) !important;
+        background-color: var(--background) !important;
+    }
+    .vectorTabs li,
+    #simpleSearch,
+    #mw-page-base
+    {
+        background-image: none !important;
+        background-color: var(--background) !important;
+    }
+    .mw-body, fieldset
+    {
+         border: 1px solid var(--purple) !important;
+    }
+    .vectorTabs li
+    {
+         border-bottom: 1px solid var(--purple) !important;
+    }
+    .vectorTabs
+    {
+        background-image: none !important;
+        margin: -1px 0 0 0;
+    }
+    .vectorTabs span
+    {
+        background-image: none !important;
+        border-left: 1px solid var(--border) !important;
+        border-right: 1px solid var(--border) !important;
+        margin: 0 0 0 -1px;
+    }
+    tr + tr > .navbox-abovebelow,
+    tr + tr > .navbox-group,
+    tr + tr > .navbox-image, tr + tr > .navbox-list
+    {
+         border-top: 2px solid var(--border);
+
+    }
+    .navbox th, .navbox-title
+    {
+         background-color: var(--background-light) !important;
+
+    }
+    h1, h2, h3, h4, h5, h6,
+    table,
+    table.wikitable > tr > th,
+    table.wikitable > tr > td,
+    table.wikitable > * > tr > th,
+    table.wikitable > * > tr > td,
+    .navbox-list,
+    .toc,
+    #pagehistory li
+    {
+         border-color: var(--border) !important;
+    }
+
+    /* 
+       Following p-logo styles from 
+       https://github.com/StylishThemes/Wikipedia-Dark
+    */
+    #p-logo a {
+         background-position: center -155px !important;
+         display: table-cell !important;
+         vertical-align: middle !important;
+    }
+    #p-logo a::before, #p-logo a::after {
+         display: block !important;
+         background: inherit !important;
+         content: "" !important;
+    }
+    #p-logo a::before {
+         background-position: center 0 !important;
+         filter: brightness(60.5%) !important;
+         height: 108px !important;
+    }
+    #p-logo a::after {
+         background-position: center -108px !important;
+         filter: invert(60.5%) !important;
+         height: 47px !important;
+    }
+}
