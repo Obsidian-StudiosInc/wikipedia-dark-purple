@@ -32,6 +32,8 @@
     table th,
     .catlinks,
     .infobox,
+    .mwe-popups,
+    .mwe-popups-container,
     .mw-body,
     .mw-warning,
     .navbox,
@@ -49,6 +51,7 @@
         background-color: var(--background) !important;
     }
     .vectorTabs li,
+    .mwe-popups-extract::after,
     #simpleSearch,
     #mw-page-base
     {
