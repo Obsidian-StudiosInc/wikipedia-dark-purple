@@ -86,7 +86,9 @@
          border-top: 2px solid var(--border);
 
     }
-    .navbox th, .navbox-title
+    .NavHead,
+    .navbox th,
+    .navbox-title
     {
          background-color: var(--background-light) !important;
 
