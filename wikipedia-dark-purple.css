@@ -88,7 +88,8 @@
     }
     .NavHead,
     .navbox th,
-    .navbox-title
+    .navbox-title,
+    .quotebox
     {
          background-color: var(--background-light) !important;
 
