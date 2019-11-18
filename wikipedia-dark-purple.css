@@ -8,13 +8,19 @@
         --background: #222;
         --background-light: #333;
         --border: #555;
+        --gray: #9D9D9D;
         --purple: #9977BB;
     }
     a:link, a:visited
     {
         color: var(--color) !important;
     }
-    a, a:active, a:hover, .toctogglelabel
+    a, a:active,
+    a:hover,
+    .mw-highlight .nc,
+    .mw-highlight .nn,
+    .mw-highlight .nf,
+    .toctogglelabel
     {
         color: var(--purple) !important;
     }
@@ -87,6 +93,9 @@
          border-top: 2px solid var(--border);
 
     }
+    code,
+    pre,
+    .mw-code,
     .NavHead,
     .navbox th,
     .navbox-title,
@@ -95,7 +104,9 @@
          background-color: var(--background-light) !important;
 
     }
+    code,
     h1, h2, h3, h4, h5, h6,
+    pre,
     table,
     table.wikitable > tr > th,
     table.wikitable > tr > td,
@@ -106,6 +117,17 @@
     #pagehistory li
     {
          border-color: var(--border) !important;
+    }
+    code,
+    pre,
+    .mw-code
+    {
+         color: var(--color) !important;
+    }
+    .mw-highlight .mf,
+    .mw-highlight .o
+    {
+         color: var(--gray) !important;
     }
 
     /* 
